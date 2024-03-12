@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "private": "true",
+  "devDependencies": {
+    "vite-plugin-full-reload": "^1.1.0"
+  }
+}

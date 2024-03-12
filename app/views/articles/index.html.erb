@@ -1,0 +1,17 @@
+<h1>Articles</h1>
+<%= link_to "New articles", new_article_path %>
+
+<ul>
+ <% @articles.each do |article| %>
+  <li>
+    <%
+=begin%>
+ <a href=<%= article_path(article) %>">
+    <%= article.title %>
+    </a>
+<%
+=end%>
+    <%= link_to article.title, controller: "articles", action: "show", id: article %>
+  </li>
+ <% end %>
+</ul>
